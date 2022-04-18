@@ -1,0 +1,121 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Laila:wght@300;500;600;700&family=Poppins:wght@100;200;300;500;700&display=swap');
+
+body,
+html {
+    margin             : 0;
+    padding            : 0;
+    background-color   : var(--bg-color);
+    color              : var(--text-color);
+    // font-family     : 'Laila', sans-serif;
+    font-family        : 'Poppins', sans-serif;
+    font-weight        : 300;
+}
+
+:root {
+    --bg-color       : #001c40;
+    --text-color     : #fff;
+    --primary-color  : #63e6be;
+    --secondary-color: yellow;
+    --padding        : 10px;
+    --border-color   : var(--primary-color);
+    // --bg-color       : #fff;
+    // --text-color     : #001c40;
+    // --primary-color  : tomato;
+    // --secondary-color: #0366d6;
+}
+
+.fas {
+    font: var(--fa-font-solid);
+}
+
+.d-f {
+    display: flex;
+}
+
+.a-c {
+    align-items: center;
+}
+
+.j-b {
+    justify-content: space-between;
+}
+
+.ta-j {
+    text-align: justify;
+}
+
+.mb-5 {
+    margin-bottom: calc(var(--padding) / 2);
+}
+
+.mb-10 {
+    margin-bottom: var(--padding);
+}
+
+.ml-5 {
+    margin-left: calc(var(--padding) / 2);
+}
+
+.ml-10 {
+    margin-left: var(--padding);
+}
+
+.p-5 {
+    padding: calc(var(--padding) / 2);
+}
+
+.p-10 {
+    padding: var(--padding);
+}
+
+.pr-5 {
+    padding-right: calc(var(--padding) / 2);
+}
+
+.pr-10 {
+    padding-right: var(--padding);
+}
+
+.pl-5 {
+    padding-left: calc(var(--padding) / 2);
+}
+
+.pl-10 {
+    padding-left: var(--padding);
+}
+
+.pb-0 {
+    padding-bottom: 0px;
+}
+
+.fw-normal {
+    font-weight: 300;
+}
+
+.fs-normal {
+    font-size: 1rem;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.chips-container {
+    display     : flex;
+    align-items : center;
+    flex-wrap   : wrap;
+    padding-left: 0px;
+
+    >.chips {
+        display         : inline-flex;
+        padding         : calc(var(--padding) / 2) var(--padding);
+        font-weight     : 500;
+        background-color: var(--primary-color);
+        margin-right    : 10px;
+        margin-bottom   : 10px;
+        border-radius   : 4px;
+        color           : var(--bg-color);
+    }
+}

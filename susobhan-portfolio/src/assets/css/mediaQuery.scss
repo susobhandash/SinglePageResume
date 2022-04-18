@@ -1,0 +1,78 @@
+@media only screen and (max-width: 768px) {
+    .profile-header {
+        flex-direction: column;
+
+        >div {
+            width: auto !important;
+
+            &.profile-image-container {
+                margin-top: var(--padding);
+            }
+
+            &.profile-links {
+                margin-top     : calc(var(--padding) * 2);
+                display        : flex;
+                align-items    : center;
+                width          : 100% !important;
+                justify-content: space-around;
+
+                >div {
+                    margin-right: var(--padding);
+                    width       : auto !important;
+
+                    >span:nth-child(1) {
+                        display: none !important;
+                    }
+
+                    >span:nth-child(2) {
+                        font-size: 1.3rem !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .profile-body {
+        >.d-f {
+            flex-direction: column;
+
+            >.w-50 {
+                width        : 100% !important;
+                margin-bottom: var(--padding) !important;
+                padding      : 0px !important;
+            }
+        }
+
+        .profile-section-header {
+            font-size    : 1.2rem !important;
+            margin-bottom: 0px !important;
+        }
+
+        .profile-section-body {
+            padding    : var(--padding) !important;
+            padding-top: 0px !important;
+
+            li {
+                margin-bottom: var(--padding) !important;
+
+                &::marker {
+                    font-size: 1rem !important;
+                }
+
+                >div {
+                    &:first-child {
+                        font-size: 1rem !important;
+                    }
+
+                    &:last-child {
+                        font-size: small !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .chips-container>.chips {
+        font-size: 0.8rem !important;
+    }
+}
